@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marchell Kevandra | Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../assets/css/custome.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="antialiased">
+    <nav class="fixed w-full z-50 p-4 md:p-6">
+        <div class="max-w-6xl mx-auto glass-dark rounded-2xl px-6 py-3 flex justify-between items-center">
+            <div class="font-syne font-800 text-xl tracking-tighter">MARCHELL<span class="text-pink-500">Kevandra</span></div>
+            
+            <div class="hidden md:flex gap-8 text-xs font-bold uppercase tracking-widest">
+                <a href="../" class="hover:text-pink-500 transition">Code</a>
+                <a href="../music/" class="hover:text-pink-500 transition">Music</a>
+                <a href="../game/" class="hover:text-pink-500 transition">Play</a>
+                <a href="../profile/" class="hover:text-pink-500 active-link transition">Profile</a>
+            </div>
+
+            <button id="menu-btn" class="md:hidden text-3xl text-white">
+                <i class='bx bx-menu-alt-right'></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="absolute top-20 left-4 right-4 glass-dark rounded-2xl p-8 md:hidden flex flex-col gap-6 text-center shadow-2xl">
+            <a href="../" class="text-lg font-bold uppercase tracking-widest active-link">Code</a>
+            <a href="../music/" class="text-lg font-bold uppercase tracking-widest hover:text-pink-500 transition">Music</a>
+            <a href="../game/" class="text-lg font-bold uppercase tracking-widest hover:text-pink-500 transition">Play</a>
+            <a href="" class="text-lg font-bold uppercase tracking-widest hover:text-pink-500 transition">Profile</a>
+        </div>
+    </nav>
+
+    <main class="pt-32 pb-20 px-6 max-w-6xl mx-auto">
+        
+        <div class="grid lg:grid-cols-3 gap-12 items-center mb-24">
+            <div class="lg:col-span-1">
+                <div class="relative w-full aspect-square rounded-[3rem] overflow-hidden border-2 border-pink-500/30 group">
+                    <img src="../assets/img/pctx1.jpeg" 
+                         alt="Marchell Profile" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-pink-500/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                </div>
+            </div>
+            <div class="lg:col-span-2 space-y-6">
+                <h1 class="text-5xl md:text-7xl font-800 tracking-tighter leading-none uppercase">
+                    Developer of <br><span class="text-pink-500">Social Engineering</span>
+                </h1>
+                <p class="text-gray-400 text-lg md:text-xl max-w-2xl leading-relaxed">
+                    Halo! Saya <span class="text-white font-bold">Marchell Kevandra</span>. Seorang kreator multi-disiplin yang menggabungkan logika pemrograman dan membuat musik untuk menciptakan pengalaman digital yang unik. Dengan latar belakang di bidang pengembangan web, desain UI/UX, dan produksi musik, saya bersemangat untuk mengeksplorasi batasan kreativitas melalui teknologi. Di luar dunia digital.
+                </p>
+                <div class="flex flex-wrap gap-3">
+                    <span class="skill-badge px-4 py-2 rounded-full text-xs font-bold uppercase cursor-pointer">Tailwind CSS</span>
+                    <span class="skill-badge px-4 py-2 rounded-full text-xs font-bold uppercase cursor-pointer">JavaScript</span>
+                    <span class="skill-badge px-4 py-2 rounded-full text-xs font-bold uppercase cursor-pointer">React.js</span>
+                    <span class="skill-badge px-4 py-2 rounded-full text-xs font-bold uppercase cursor-pointer">UI/UX Design</span>
+                    <span class="skill-badge px-4 py-2 rounded-full text-xs font-bold uppercase cursor-pointer">Music Production</span>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="font-syne text-3xl font-800 mb-10 tracking-widest uppercase text-gray-500 border-l-4 border-pink-500 pl-6">Featured Projects</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+            
+            <div class="glass-dark rounded-3xl p-8 border border-white/5 hover:border-pink-500/30 transition-all group cursor-pointer">
+                <div class="flex justify-between items-start mb-6">
+                    <div class="p-4 bg-pink-500/10 rounded-2xl">
+                        <i class='bx bx-code-alt text-3xl text-pink-500'></i>
+                    </div>
+                </div>
+                <h3 class="font-bold text-2xl mb-2">The Mixstation</h3>
+                <p class="text-gray-500 text-sm leading-relaxed mb-6">
+                    Platform pemutar musik interaktif berbasis web dengan fitur visualizer piringan hitam dan playlist kustom.
+                </p>
+                <div class="text-[10px] font-mono uppercase tracking-widest text-pink-400">FL Studio</div>
+            </div>
+
+            <div class="glass-dark rounded-3xl p-8 border border-white/5 hover:border-blue-500/30 transition-all group cursor-pointer">
+                <div class="flex justify-between items-start mb-6">
+                    <div class="p-4 bg-blue-500/10 rounded-2xl">
+                        <i class='bx bx-joystick text-3xl text-blue-500'></i>
+                    </div>
+                </div>
+                <h3 class="font-bold text-2xl mb-2">Gaming Stats Dashboard</h3>
+                <p class="text-gray-500 text-sm leading-relaxed mb-6">
+                    Halaman statistik pemain dengan integrasi banner visual dan sistem pencapaian (achievement) real-time.
+                </p>
+                <div class="text-[10px] font-mono uppercase tracking-widest text-blue-400">UI Design / Frontend</div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="p-6 md:p-10">
+        <div class="max-w-6xl mx-auto">
+            <div class="glass-dark rounded-[2rem] p-8 md:p-12 border border-white/5 flex flex-col md:flex-row justify-between items-center gap-10">
+                <div class="text-center md:text-left">
+                    <h3 class="font-syne font-800 text-2xl uppercase tracking-tighter mb-2">Connect with me</h3>
+                    <p class="text-gray-500 text-sm">Mari berkolaborasi untuk proyek luar biasa berikutnya.</p>
+                </div>
+                <div class="flex gap-6">
+            <a
+              href="https://instagram.com/chellgnzxz"
+              class="social-icon transition-all duration-300"
+              ><i class="bx bxl-instagram text-3xl"></i
+            ></a>
+            <a
+              href="https://linkedin.com/in/marchellkevandra"
+              class="social-icon transition-all duration-300"
+              ><i class="bx bxl-linkedin text-3xl"></i
+            ></a>
+            <a
+              href="https://twitter.com/marchel_kvndra"
+              class="social-icon transition-all duration-300"
+              ><i class="bx bxl-twitter text-3xl"></i
+            ></a>
+            <a
+              href="https://discord.com/users/marchell_kevandra._"
+              class="social-icon transition-all duration-300"
+              ><i class="bx bxl-discord text-3xl"></i
+            ></a>
+          </div>
+                <div class="text-[10px] font-mono text-gray-600 uppercase tracking-widest text-center">
+                    EST. 2026 <br> MK DIGITAL ARCHIVE
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

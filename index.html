@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marchell Kevandra | Architect</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Syne:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/custome.css">
+  </head>
+  <body class="antialiased flex flex-col min-h-screen">
+    <nav class="fixed w-full z-50 p-4 md:p-6">
+      <div
+        class="max-w-6xl mx-auto glass-dark rounded-2xl px-6 py-3 flex justify-between items-center"
+      >
+        <div class="font-syne font-800 text-xl tracking-tighter">
+          MARCHELL<span class="text-pink-500">Kevandra</span>
+        </div>
+
+        <div
+          class="hidden md:flex gap-8 text-xs font-bold uppercase tracking-widest"
+        >
+          <a href="index.html" class="active-link">Code</a>
+          <a href="music/" class="hover:text-pink-500 transition">Music</a>
+          <a href="game/" class="hover:text-pink-500 transition">Play</a>
+          <a href="profile/" class="hover:text-pink-500 transition">Profile</a>
+        </div>
+
+        <button id="menu-btn" class="md:hidden text-3xl text-white">
+          <i class="bx bx-menu-alt-right"></i>
+        </button>
+      </div>
+
+      <div
+        id="mobile-menu"
+        class="absolute top-20 left-4 right-4 glass-dark rounded-2xl p-8 md:hidden flex flex-col gap-6 text-center shadow-2xl"
+      >
+        <a
+          href="index.html"
+          class="text-lg font-bold uppercase tracking-widest active-link"
+          >Code</a
+        >
+        <a
+          href="music/"
+          class="text-lg font-bold uppercase tracking-widest hover:text-pink-500 transition"
+          >Music</a
+        >
+        <a
+          href="game/"
+          class="text-lg font-bold uppercase tracking-widest hover:text-pink-500 transition"
+          >Play</a
+        >
+        <a
+          href="profile/"
+          class="text-lg font-bold uppercase tracking-widest hover:text-pink-500 transition"
+          >Profile</a
+        >
+      </div>
+    </nav>
+
+    <main class="pt-32 pb-10 px-6 max-w-6xl mx-auto flex-grow w-full">
+      <div
+        class="glass-dark p-8 md:p-16 rounded-[2.5rem] border border-white/5 relative overflow-hidden mb-12"
+      >
+        <div
+          class="absolute -top-24 -right-24 w-64 h-64 bg-pink-500/10 blur-[100px]"
+        ></div>
+        <div class="relative z-10">
+          <h1
+            class="text-5xl md:text-8xl font-800 mb-8 leading-[0.9] tracking-tighter"
+          >
+            BUILDING THE
+            <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-violet-600"
+              >FUTURE</span
+            >.
+          </h1>
+          <p
+            class="text-gray-400 text-base md:text-xl max-w-2xl mb-12 leading-relaxed"
+          >
+            Marchell Kevandra. Developer atau Software Architect yang membangun
+            ekosistem digital dari baris kode Dan Pembuat Musik yang menciptakan
+            frekuensi audio.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a
+              href="https://chell-portfolio.vercel.app/"
+              target="_blank"
+              class="bg-white text-black px-8 py-4 rounded-full font-bold flex items-center justify-center gap-2 hover:scale-105 transition-all duration-300"
+            >
+              <i class="bx bx-link text-2xl"></i> Portfolio
+            </a>
+            <a
+              href="https://tikchl.netlify.app/"
+              class="border border-white/10 px-8 py-4 rounded-full font-bold flex items-center justify-center gap-2 hover:bg-white hover:text-black transition-all duration-300"
+            >
+              <i class="bx bxl-tiktok text-2xl"></i> Tiktok Downloader
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-16">
+        <div class="glass-dark p-8 rounded-[2rem] border border-white/5">
+          <h3
+            class="font-syne font-800 text-xs uppercase tracking-[0.3em] text-pink-500 mb-8"
+          >
+            Main Expertise
+          </h3>
+          <div class="space-y-8">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="font-bold text-lg">Fullstack Development</span>
+                <span class="text-xs font-mono opacity-50">85%</span>
+              </div>
+              <div class="w-full h-1.5 bg-white/5 rounded-full overflow-hidden">
+                <div
+                  class="h-full bg-gradient-to-r from-pink-500 to-violet-600 w-[85%] rounded-full"
+                ></div>
+              </div>
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="font-bold text-lg">UI/UX Visual Design</span>
+                <span class="text-xs font-mono opacity-50">70%</span>
+              </div>
+              <div class="w-full h-1.5 bg-white/5 rounded-full overflow-hidden">
+                <div
+                  class="h-full bg-gradient-to-r from-pink-500 to-violet-600 w-[70%] rounded-full"
+                ></div>
+              </div>
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="font-bold text-lg">Music Production</span>
+                <span class="text-xs font-mono opacity-50">60%</span>
+              </div>
+              <div class="w-full h-1.5 bg-white/5 rounded-full overflow-hidden">
+                <div
+                  class="h-full bg-gradient-to-r from-pink-500 to-violet-600 w-[60%] rounded-full"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+          <div
+            class="glass-dark p-6 rounded-2xl border border-white/5 flex flex-col items-center justify-center gap-2 hover:border-pink-500/50 transition-all group cursor-pointer"
+          >
+            <i class="bx bxl-react text-4xl text-[#61DAFB]"></i>
+            <span class="text-[10px] font-bold uppercase tracking-widest"
+              >React</span
+            >
+          </div>
+
+          <div
+            class="glass-dark p-6 rounded-2xl border border-white/5 flex flex-col items-center justify-center gap-2 hover:border-pink-500/50 transition-all group cursor-pointer"
+          >
+            <i class="bx bxl-nodejs text-4xl text-[#339933]"></i>
+            <span class="text-[10px] font-bold uppercase tracking-widest"
+              >Node JS</span
+            >
+          </div>
+
+          <div
+            class="glass-dark p-6 rounded-2xl border border-white/5 flex flex-col items-center justify-center gap-2 hover:border-pink-500/50 transition-all group cursor-pointer"
+          >
+            <i class="bx bxl-tailwind-css text-4xl text-[#38BDF8]"></i>
+            <span class="text-[10px] font-bold uppercase tracking-widest"
+              >Tailwind</span
+            >
+          </div>
+
+          <div
+            class="glass-dark p-6 rounded-2xl border border-white/5 flex flex-col items-center justify-center gap-2 hover:border-pink-500/50 transition-all group cursor-pointer"
+          >
+            <i class="bx bxl-mongodb text-4xl text-[#47A248]"></i>
+            <span class="text-[10px] font-bold uppercase tracking-widest"
+              >DataBase</span
+            >
+          </div>
+
+          <div
+            class="glass-dark p-6 rounded-2xl border border-white/5 flex flex-col items-center justify-center gap-2 hover:border-pink-500/50 transition-all group cursor-pointer"
+          >
+            <i class="bx bxl-php text-4xl text-[#777BB4]"></i>
+            <span class="text-[10px] font-bold uppercase tracking-widest"
+              >PHP</span
+            >
+          </div>
+
+          <div
+            class="glass-dark p-6 rounded-2xl border border-white/5 flex flex-col items-center justify-center gap-2 hover:border-pink-500/50 transition-all group cursor-pointer"
+          >
+            <i class="bx bx-headphone text-4xl text-[#FF8500]"></i>
+            <span class="text-[10px] font-bold uppercase tracking-widest"
+              >Fl Studio</span
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+    <section class="pb-20 px-6 max-w-6xl mx-auto w-full">
+      <div
+        class="flex-col md:flex-row md:items-end justify-between mb-12 gap-4"
+      >
+        <div>
+          <h3
+            class="font-syne font-800 text-sm uppercase tracking-[0.3em] text-pink-500 mb-2"
+          >
+            Service
+          </h3>
+          <p class="text-4xl md:text-5xl font-700 tracking-tighter">
+            Web Development
+          </p>
+        </div>
+        <p class="text-gray-500 text-sm max-w-xs font-medium">
+          Solusi digital premium untuk bisnis dan personal yang menginginkan
+          performa maksimal.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div
+          class="group relative glass-dark p-8 rounded-[2.5rem] border border-white/5 hover:border-pink-500/30 transition-all duration-500"
+        >
+          <div
+            class="w-14 h-14 rounded-2xl bg-pink-500/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform"
+          >
+            <i class="bx bx-layout text-3xl text-pink-500"></i>
+          </div>
+          <h4 class="font-syne text-xl font-bold mb-3 uppercase tracking-tight">
+            Landing Page
+          </h4>
+          <p class="text-gray-400 text-sm leading-relaxed mb-6">
+            Desain satu halaman yang fokus pada konversi, sangat cepat, dan SEO
+            friendly untuk produk atau campaign Anda.
+          </p>
+          <ul
+            class="space-y-2 mb-8 text-xs font-mono text-gray-500 uppercase tracking-wider"
+          >
+            <li class="flex items-center gap-2">
+              <i class="bx bx-check text-pink-500"></i> High Conversion
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="bx bx-check text-pink-500"></i> Mobile Optimized
+            </li>
+          </ul>
+          <div class="pt-4 border-t border-white/5">
+            <span class="text-xs font-bold opacity-30 uppercase tracking-widest"
+              >Starts From</span
+            >
+            <p class="text-xl font-bold text-white mt-1">IDR 1.5M+</p>
+          </div>
+        </div>
+
+        <div
+          class="group relative glass-dark p-8 rounded-[2.5rem] border border-white/5 hover:border-blue-500/30 transition-all duration-500 bg-gradient-to-b from-white/[0.02] to-transparent"
+        >
+          <div
+            class="w-14 h-14 rounded-2xl bg-blue-500/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform"
+          >
+            <i class="bx bx-buildings text-3xl text-blue-500"></i>
+          </div>
+          <h4 class="font-syne text-xl font-bold mb-3 uppercase tracking-tight">
+            Company Profile
+          </h4>
+          <p class="text-gray-400 text-sm leading-relaxed mb-6">
+            Membangun kredibilitas bisnis Anda dengan website profesional yang
+            mencerminkan nilai perusahaan.
+          </p>
+          <ul
+            class="space-y-2 mb-8 text-xs font-mono text-gray-500 uppercase tracking-wider"
+          >
+            <li class="flex items-center gap-2">
+              <i class="bx bx-check text-blue-500"></i> CMS Integrated
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="bx bx-check text-blue-500"></i> Custom UI Design
+            </li>
+          </ul>
+          <div class="pt-4 border-t border-white/5">
+            <span class="text-xs font-bold opacity-30 uppercase tracking-widest"
+              >Starts From</span
+            >
+            <p class="text-xl font-bold text-white mt-1">IDR 3.5M+</p>
+          </div>
+        </div>
+
+        <div
+          class="group relative glass-dark p-8 rounded-[2.5rem] border border-white/5 hover:border-violet-500/30 transition-all duration-500"
+        >
+          <div
+            class="w-14 h-14 rounded-2xl bg-violet-500/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform"
+          >
+            <i class="bx bx-code-block text-3xl text-violet-500"></i>
+          </div>
+          <h4 class="font-syne text-xl font-bold mb-3 uppercase tracking-tight">
+            Web Application
+          </h4>
+          <p class="text-gray-400 text-sm leading-relaxed mb-6">
+            Sistem kustom kompleks seperti dashboard manajemen, e-commerce, atau
+            integrasi AI sesuai kebutuhan unik Anda.
+          </p>
+          <ul
+            class="space-y-2 mb-8 text-xs font-mono text-gray-500 uppercase tracking-wider"
+          >
+            <li class="flex items-center gap-2">
+              <i class="bx bx-check text-violet-500"></i> Scalable System
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="bx bx-check text-violet-500"></i> API Integration
+            </li>
+          </ul>
+          <div class="pt-4 border-t border-white/5">
+            <span class="text-xs font-bold opacity-30 uppercase tracking-widest"
+              >Starts From</span
+            >
+            <p class="text-xl font-bold text-white mt-1">IDR 7.5M+</p>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="mt-12 text-center">
+        <a
+          href="https://instagram.com/marchell_kevandra"
+          class="inline-flex items-center gap-3 bg-pink-500 hover:bg-pink-600 text-white font-bold py-5 px-10 rounded-full transition-all hover:scale-105 shadow-[0_0_30px_rgba(236,72,153,0.3)]"
+        >
+          KONSULTASI GRATIS <i class="bx bxl-instagram text-2xl"></i>
+        </a>
+      </div> -->
+    </section>
+    <section class="pb-20 px-6 max-w-6xl mx-auto w-full">
+      <div
+        class="flex-col md:flex-row md:items-end justify-between mb-12 gap-4"
+      >
+        <div>
+          <h3
+            class="font-syne font-800 text-sm uppercase tracking-[0.3em] text-orange-500 mb-2"
+          >
+            Sound Lab
+          </h3>
+          <p class="text-4xl md:text-5xl font-700 tracking-tighter">
+            Music Production
+          </p>
+        </div>
+        <p class="text-gray-500 text-sm max-w-xs font-medium">
+          Mengubah ide mentah menjadi komposisi audio berkualitas tinggi siap
+          rilis.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div
+          class="group relative glass-dark p-8 rounded-[2.5rem] border border-white/5 hover:border-orange-500/30 transition-all duration-500 overflow-hidden"
+        >
+          <div
+            class="absolute -right-4 -top-4 opacity-5 group-hover:opacity-10 transition-opacity"
+          >
+            <i class="bx bx-bar-chart text-9xl rotate-90"></i>
+          </div>
+
+          <div
+            class="w-14 h-14 rounded-2xl bg-orange-500/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform"
+          >
+            <i class="bx bx-music text-3xl text-orange-500"></i>
+          </div>
+          <h4 class="font-syne text-xl font-bold mb-3 uppercase tracking-tight">
+            Custom Beat
+          </h4>
+          <p class="text-gray-400 text-sm leading-relaxed mb-6">
+            Pembuatan musik instrumental eksklusif (Hip-hop, EDM, Pop) original
+            tanpa perlu khawatir masalah hak cipta (Copyright).
+          </p>
+          <ul
+            class="space-y-2 mb-8 text-[10px] font-mono text-gray-500 uppercase tracking-widest"
+          >
+            <li class="flex items-center gap-2">
+              <i class="bx bx-radio-circle-marked text-orange-500"></i>
+              Commercial Use
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="bx bx-radio-circle-marked text-orange-500"></i> Tracked
+              Out Stems
+            </li>
+          </ul>
+          <div class="pt-4 border-t border-white/5">
+            <p class="text-xl font-bold text-white mt-1">IDR 500K+</p>
+          </div>
+        </div>
+
+        <div
+          class="group relative glass-dark p-8 rounded-[2.5rem] border border-white/5 hover:border-cyan-500/30 transition-all duration-500 bg-gradient-to-b from-white/[0.02] to-transparent"
+        >
+          <div
+            class="w-14 h-14 rounded-2xl bg-cyan-500/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform"
+          >
+            <i class="bx bx-slider-alt text-3xl text-cyan-500"></i>
+          </div>
+          <h4 class="font-syne text-xl font-bold mb-3 uppercase tracking-tight">
+            Mixing & Mastering
+          </h4>
+          <p class="text-gray-400 text-sm leading-relaxed mb-6">
+            Optimasi kualitas vokal dan instrumen agar terdengar jernih, lebar,
+            dan seimbang di berbagai perangkat audio.
+          </p>
+          <ul
+            class="space-y-2 mb-8 text-[10px] font-mono text-gray-500 uppercase tracking-widest"
+          >
+            <li class="flex items-center gap-2">
+              <i class="bx bx-radio-circle-marked text-cyan-500"></i> Industry
+              Standard
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="bx bx-radio-circle-marked text-cyan-500"></i> High-Res
+              Audio Export
+            </li>
+          </ul>
+          <div class="pt-4 border-t border-white/5">
+            <p class="text-xl font-bold text-white mt-1">IDR 300K+</p>
+          </div>
+        </div>
+
+        <div
+          class="group relative glass-dark p-8 rounded-[2.5rem] border border-white/5 hover:border-pink-500/30 transition-all duration-500"
+        >
+          <div
+            class="w-14 h-14 rounded-2xl bg-pink-500/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform"
+          >
+            <i class="bx bx-headphone text-3xl text-pink-500"></i>
+          </div>
+          <h4 class="font-syne text-xl font-bold mb-3 uppercase tracking-tight">
+            Full Production
+          </h4>
+          <p class="text-gray-400 text-sm leading-relaxed mb-6">
+            Produksi lagu secara utuh mulai dari aransemen, recording guidance,
+            hingga tahap final mastering.
+          </p>
+          <ul
+            class="space-y-2 mb-8 text-[10px] font-mono text-gray-500 uppercase tracking-widest"
+          >
+            <li class="flex items-center gap-2">
+              <i class="bx bx-radio-circle-marked text-pink-500"></i> Complete
+              Arrangement
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="bx bx-radio-circle-marked text-pink-500"></i> Ghost
+              Production
+            </li>
+          </ul>
+          <div class="pt-4 border-t border-white/5">
+            <p class="text-xl font-bold text-white mt-1">IDR 2M+</p>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="mt-12 text-center">
+        <a
+          href="https://instagram.com/marchell_kevandra"
+          class="inline-flex items-center gap-3 bg-pink-500 hover:bg-pink-600 text-white font-bold py-5 px-10 rounded-full transition-all hover:scale-105 shadow-[0_0_30px_rgba(236,72,153,0.3)]"
+        >
+          KONSULTASI GRATIS <i class="bx bxl-instagram text-2xl"></i>
+        </a>
+      </div> -->
+    </section>
+    <!-- <section class="pb-20 px-6 max-w-4xl mx-auto w-full">
+      <div class="text-center mb-12">
+        <h3
+          class="font-syne font-800 text-sm uppercase tracking-[0.3em] text-pink-500 mb-2"
+        >
+          Help Center
+        </h3>
+        <p class="font-syne text-4xl font-700 tracking-tighter">
+          Common_Questions
+        </p>
+      </div>
+
+      <div class="space-y-4">
+        <div
+          class="faq-item glass-dark rounded-[1.5rem] border border-white/5 overflow-hidden transition-all duration-300"
+        >
+          <button
+            onclick="toggleFAQ(this)"
+            class="w-full p-6 text-left flex justify-between items-center group"
+          >
+            <span
+              class="font-bold text-sm uppercase tracking-wider text-gray-300 group-hover:text-pink-500 transition-colors"
+            >
+              Apakah website yang dibuat sudah termasuk Domain dan Hosting?
+            </span>
+            <i
+              class="bx bx-plus text-2xl faq-icon transition-transform duration-300"
+            ></i>
+          </button>
+          <div class="faq-content">
+            <div
+              class="px-6 pb-6 text-gray-500 text-sm leading-relaxed border-t border-white/5 pt-4"
+            >
+              Untuk paket Landing Page dan Company Profile, kami menyediakan
+              opsi "All-in" yang sudah termasuk penyewaan domain (.com/.id) dan
+              cloud hosting selama 1 tahun.
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="faq-item glass-dark rounded-[1.5rem] border border-white/5 overflow-hidden transition-all duration-300"
+        >
+          <button
+            onclick="toggleFAQ(this)"
+            class="w-full p-6 text-left flex justify-between items-center group"
+          >
+            <span
+              class="font-bold text-sm uppercase tracking-wider text-gray-300 group-hover:text-orange-500 transition-colors"
+            >
+              Bagaimana dengan hak cipta musik yang dipesan?
+            </span>
+            <i
+              class="bx bx-plus text-2xl faq-icon transition-transform duration-300"
+            ></i>
+          </button>
+          <div class="faq-content">
+            <div
+              class="px-6 pb-6 text-gray-500 text-sm leading-relaxed border-t border-white/5 pt-4"
+            >
+              Setiap lagu atau beat yang dibuat secara custom akan menjadi hak
+              milik klien sepenuhnya (Exclusive Rights). Anda bebas merilisnya
+              di berbagai platform digital.
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="faq-item glass-dark rounded-[1.5rem] border border-white/5 overflow-hidden transition-all duration-300"
+        >
+          <button
+            onclick="toggleFAQ(this)"
+            class="w-full p-6 text-left flex justify-between items-center group"
+          >
+            <span
+              class="font-bold text-sm uppercase tracking-wider text-gray-300 group-hover:text-pink-500 transition-colors"
+            >
+              Berapa kali saya bisa mengajukan revisi?
+            </span>
+            <i
+              class="bx bx-plus text-2xl faq-icon transition-transform duration-300"
+            ></i>
+          </button>
+          <div class="faq-content">
+            <div
+              class="px-6 pb-6 text-gray-500 text-sm leading-relaxed border-t border-white/5 pt-4"
+            >
+              Kami memberikan standar 3x revisi minor untuk setiap proyek guna
+              memastikan hasil akhir sesuai ekspektasi Anda.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <footer class="p-6 md:p-10 w-full">
+      <div class="max-w-6xl mx-auto">
+        <div
+          class="glass-dark rounded-[2rem] p-8 md:p-12 border border-white/5 flex flex-col md:flex-row justify-between items-center gap-10 text-center md:text-left"
+        >
+          <div class="space-y-4">
+            <div
+              class="flex items-center gap-2 justify-center md:justify-start"
+            >
+              <span class="relative flex h-3 w-3">
+                <span
+                  class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"
+                ></span>
+                <span
+                  class="relative inline-flex rounded-full h-3 w-3 bg-green-500"
+                ></span>
+              </span>
+              <span
+                class="text-xs font-bold uppercase tracking-widest text-green-500"
+                >Available for Projects</span
+              >
+            </div>
+            <p class="text-2xl font-syne font-800 uppercase tracking-tighter">
+              Marchell Kevandra
+            </p>
+            <p class="text-gray-500 text-sm max-w-xs leading-relaxed">
+              Developer
+            </p>
+          </div>
+
+          <div class="flex gap-6">
+            <a
+              href="https://instagram.com/chellgnzxz"
+              class="social-icon transition-all duration-300"
+              ><i class="bx bxl-instagram text-3xl"></i
+            ></a>
+            <a
+              href="https://linkedin.com/in/marchellkevandra"
+              class="social-icon transition-all duration-300"
+              ><i class="bx bxl-linkedin text-3xl"></i
+            ></a>
+            <a
+              href="https://twitter.com/marchel_kvndra"
+              class="social-icon transition-all duration-300"
+              ><i class="bx bxl-twitter text-3xl"></i
+            ></a>
+            <a
+              href="https://discord.com/users/marchell_kevandra._"
+              class="social-icon transition-all duration-300"
+              ><i class="bx bxl-discord text-3xl"></i
+            ></a>
+          </div>
+
+          <div
+            class="text-xs font-mono text-gray-600 uppercase tracking-widest"
+          >
+            © 2026 Marchell Kevandra <br />
+            <span class="mt-2 inline-block">All Rights Reserved.</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+    
+  </body>
+</html>

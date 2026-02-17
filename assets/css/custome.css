@@ -1,0 +1,113 @@
+body {
+  background-color: #050505;
+  color: #e2e8f0;
+  font-family: "Space Grotesk", sans-serif;
+  overflow-x: hidden;
+}
+.font-syne {
+  font-family: "Syne", sans-serif;
+}
+.glass-dark {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.active-link {
+  color: #ec4899;
+}
+
+#mobile-menu {
+  transition: all 0.3s ease-in-out;
+  transform: translateY(-20px);
+  opacity: 0;
+  pointer-events: none;
+}
+#mobile-menu.open {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.social-icon:hover {
+  text-shadow: 0 0 15px #ec4899;
+  color: #ec4899;
+}
+/* FAQ Smooth Animation */
+.faq-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+}
+
+.faq-item.active .faq-content {
+  max-height: 1000px;
+  transition: max-height 1s ease-in-out;
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(45deg);
+  color: #ec4899;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #ec4899, #8b5cf6);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ec4899;
+}
+#waveform shadow {
+    filter: drop-shadow(0 0 8px rgba(255, 0, 128, 0.6));
+}
+#waveform canvas {
+    border-radius: 8px;
+}
+.skill-badge {
+  background: rgba(236, 72, 153, 0.1);
+  border: 1px solid rgba(236, 72, 153, 0.2);
+  transition: all 0.3s;
+}
+.skill-badge:hover {
+  background: #ec4899;
+  color: white;
+  transform: translateY(-3px);
+}
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+.delay-1 { transition-delay: 0.2s; }
+.delay-2 { transition-delay: 0.4s; }
+.delay-3 { transition-delay: 0.6s; }
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.animate-spin-slow {
+  animation: spin-slow 5s linear infinite;
+}
+@keyframes achievement-pop {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
