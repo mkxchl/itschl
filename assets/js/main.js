@@ -17,6 +17,7 @@ const currentArtist = document.getElementById('current-artist')
 const diskVisual = document.getElementById('disk-visual')
 const progressBar = document.getElementById('progress-bar')
 const progressContainer = document.getElementById('progress-container')
+const currentCover = document.getElementById('current-cover')
 
 let isPlaying = false
 
@@ -24,6 +25,7 @@ function togglePlay (trackElement) {
   const src = trackElement.getAttribute('data-src')
   const title = trackElement.getAttribute('data-title')
   const artist = trackElement.getAttribute('data-artist')
+  const coverSrc = trackElement.getAttribute('data-cover')
   const icon = trackElement.querySelector('.play-btn-circle i')
 
   const isSameTrack = audio.getAttribute('src') === src
@@ -32,6 +34,10 @@ function togglePlay (trackElement) {
     audio.src = src
     currentTitle.innerText = title
     currentArtist.innerText = artist
+    if (currentCover && coverSrc) {
+      currentCover.src = coverSrc
+    }
+
     resetIcons()
     playAudio(icon)
   } else {
@@ -73,9 +79,11 @@ audio.addEventListener('timeupdate', () => {
 })
 
 progressContainer.addEventListener('click', e => {
-  const width = progressContainer.clientWidth
-  const clickX = e.offsetX
-  audio.currentTime = (clickX / width) * audio.duration
+  if (audio.duration) {
+    const width = progressContainer.clientWidth
+    const clickX = e.offsetX
+    audio.currentTime = (clickX / width) * audio.duration
+  }
 })
 
 trackItems.forEach(item => {
@@ -86,6 +94,7 @@ audio.addEventListener('ended', () => {
   isPlaying = false
   diskVisual.style.animationPlayState = 'paused'
   resetIcons()
+
 })
 window.addEventListener('click', e => {
   if (!menuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
@@ -106,3 +115,41 @@ function toggleFAQ (element) {
     parent.classList.add('active')
   }
 }
+const sliderContainer = document.getElementById('slider-container')
+const slides = sliderContainer.querySelectorAll('img')
+const dots = document.querySelectorAll('.dot')
+let currentSlide = 0
+const slideInterval = 5000
+
+function showSlide (index) {
+  sliderContainer.style.transform = `translateX(-${index * 100}%)`
+
+  dots.forEach((dot, i) => {
+    if (i === index) {
+      dot.classList.add('bg-white')
+      dot.classList.remove('bg-white/50')
+    } else {
+      dot.classList.remove('bg-white')
+      dot.classList.add('bg-white/50')
+    }
+  })
+}
+
+function nextSlide () {
+  currentSlide = (currentSlide + 1) % slides.length
+  showSlide(currentSlide)
+}
+
+showSlide(currentSlide)
+
+// Auto-play slider
+let autoPlay = setInterval(nextSlide, slideInterval)
+
+dots.forEach((dot, index) => {
+  dot.addEventListener('click', () => {
+    clearInterval(autoPlay)
+    currentSlide = index
+    showSlide(currentSlide)
+    autoPlay = setInterval(nextSlide, slideInterval)
+  })
+})
