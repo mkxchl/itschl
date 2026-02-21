@@ -106,4 +106,3 @@ function toggleFAQ (element) {
     parent.classList.add('active')
   }
 }
-
